@@ -1,0 +1,7 @@
+streamlit
+requests
+pandas
+folium
+streamlit-folium
+python-dotenv
+streamlit-autorefresh
