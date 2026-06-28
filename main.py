@@ -136,5 +136,3 @@ if st.session_state.weather is not None:
     show_forecast_chart(st.session_state.forecast)
 
     show_air_quality(st.session_state.air_quality)
-
-    show_weather_map(st.session_state.weather)
