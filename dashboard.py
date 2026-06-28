@@ -22,9 +22,7 @@ def show_weather_cards(weather):
 
     st.divider()
 
-    # -------------------------
     # First Row
-    # -------------------------
 
     col1, col2, col3, col4 = st.columns(4)
 
@@ -54,9 +52,7 @@ def show_weather_cards(weather):
 
     st.divider()
 
-    # -------------------------
     # Second Row
-    # -------------------------
 
     col5, col6, col7, col8 = st.columns(4)
 
@@ -86,9 +82,7 @@ def show_weather_cards(weather):
 
     st.divider()
 
-    # -------------------------
     # Sunrise & Sunset
-    # -------------------------
 
     col9, col10 = st.columns(2)
 

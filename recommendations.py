@@ -15,9 +15,7 @@ def get_weather_recommendations(weather, air_quality=None):
     weather_main = weather["weather"][0]["main"].lower()
     weather_desc = weather["weather"][0]["description"].lower()
 
-    # ==========================
     # Weather Condition
-    # ==========================
 
     if weather_main == "clear":
 
@@ -70,9 +68,7 @@ def get_weather_recommendations(weather, air_quality=None):
         recommendations.append("🌫 Low visibility expected.")
         recommendations.append("🚗 Drive carefully.")
 
-    # ==========================
     # Temperature
-    # ==========================
 
     if temperature >= 40:
 
@@ -88,9 +84,7 @@ def get_weather_recommendations(weather, air_quality=None):
         recommendations.append("🥶 Cold weather.")
         recommendations.append("🧥 Wear warm clothing before going outside.")
 
-    # ==========================
     # Humidity
-    # ==========================
 
     if humidity >= 85:
 
@@ -100,18 +94,14 @@ def get_weather_recommendations(weather, air_quality=None):
 
         recommendations.append("💧 Dry weather. Keep yourself hydrated.")
 
-    # ==========================
     # Wind
-    # ==========================
 
     if wind_speed >= 10:
 
         recommendations.append("🌬 Strong winds expected.")
         recommendations.append("🚴 Ride carefully and secure loose objects.")
 
-    # ==========================
     # Air Quality
-    # ==========================
 
     if air_quality is not None:
 
@@ -141,9 +131,7 @@ def get_weather_recommendations(weather, air_quality=None):
             recommendations.append("😷 Wear an N95 mask.")
             recommendations.append("🏠 Stay indoors and keep windows closed.")
 
-    # ==========================
     # Default
-    # ==========================
 
     if not recommendations:
 
